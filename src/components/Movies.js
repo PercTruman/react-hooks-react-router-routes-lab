@@ -4,7 +4,7 @@ import { movies } from "../data";
 function Movies() {
   const movieList = movies.map((movie) => (
     
-    <div>
+    <div key={movie.title}>
      <h3>Name: {movie.title}</h3>
       <h4>Time: {movie.time}</h4>
       <h4>Genres:</h4>

@@ -3,10 +3,10 @@ import { directors } from "../data";
 
 function Directors() {
   const directorsList = directors.map((director)=>(
-    <div>
+    <div key={director.name}>
       <h3>Name: {director.name}</h3>
       <h4>Movies:</h4>
-      <ul>{director.movies.map(movie=><li key={movie}>{movie}</li>)}</ul>
+      <ul>{director.movies.map(movie => <li key={movie}>{movie}</li>)}</ul>
     </div>
   ))
 
